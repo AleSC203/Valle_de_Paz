@@ -1,0 +1,133 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;   
+    overflow-y: auto; 
+}
+
+.pantallas {
+    display: flex;       
+    flex-direction: row; 
+    gap: 20px;
+    padding: 20px;
+    width: max-content;  
+}
+
+
+
+/* Pantalla cuadrada 960x960 */
+.pantalla.cuadrada {
+    width: 960px;
+    height: 960px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #444;
+}
+
+.pantalla.cuadrada .contenido img {
+    width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+
+}
+
+
+
+/* Pantalla rectangular 960x1728 */
+.pantalla.rectangular {
+    width: 1728px;
+    height: 960px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #444;
+}
+
+.pantalla.rectangular .contenido img {
+    width: 70%;
+    max-height: 50%;
+    object-fit: contain;
+
+}
+
+
+
+.contenido {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.info-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Esto es para la pantalla Grande  */
+
+.pantalla.rectangular .info-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 12rem !important;
+    width: 100%;
+}
+
+
+.pantalla.rectangular .dato .label {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+
+.pantalla.rectangular .dato .valor {
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+/*Final Esto es para la pantalla Grande  */
+
+
+
+/* Esto es para la pantalla Grande  */
+
+.pantalla.cuadrada .info-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5rem !important;
+    width: 100%;
+}
+
+
+.pantalla.cuadrada .dato .label {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+
+.pantalla.cuadrada .dato .valor {
+    font-size: 3.2em;
+    margin-bottom: 5px;
+}
+
+/*Final Esto es para la pantalla Grande  */
