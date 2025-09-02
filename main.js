@@ -33,8 +33,8 @@ function obtenerClima() {
         .then(response => response.json())
         .then(data => {
             const temperatura = Math.round(data.main.temp);
-            const descripcion = data.weather[0].description;
-            const climaTexto = `${temperatura}°C, ${descripcion}`;
+            /* const descripcion = data.weather[0].description; */
+            const climaTexto = `${temperatura}°C`   /* , ${descripcion} */;
 
             // Actualizar en ambas pantallas
             document.getElementById('clima1').textContent = climaTexto;

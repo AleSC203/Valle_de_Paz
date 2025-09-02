@@ -89,8 +89,9 @@ html {
 .pantalla.rectangular .info-bottom {
     display: flex;
     justify-content: center;
-    gap: 12rem !important;
+    gap: 5rem !important;
     width: 100%;
+    flex-direction: column;
 }
 
 
@@ -109,13 +110,14 @@ html {
 
 
 
-/* Esto es para la pantalla Grande  */
+/* Esto es para la pantalla pequeña  */
 
 .pantalla.cuadrada .info-bottom {
     display: flex;
     justify-content: center;
-    gap: 5rem !important;
+    gap: 4rem !important;
     width: 100%;
+    flex-direction: column;
 }
 
 
@@ -130,4 +132,4 @@ html {
     margin-bottom: 5px;
 }
 
-/*Final Esto es para la pantalla Grande  */
+/*Final Esto es para la pantalla pequeña */
